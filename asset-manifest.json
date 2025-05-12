@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/lettucecook/static/css/main.4fb318e1.css",
+    "main.js": "/lettucecook/static/js/main.0e7e3c14.js",
+    "static/media/vegan.png": "/lettucecook/static/media/vegan.249ce0e2d9bad8e5d3eb.png",
+    "static/media/hero-plate.png": "/lettucecook/static/media/hero-plate.e666da67a2748071d9f6.png",
+    "static/media/dairyfree.png": "/lettucecook/static/media/dairyfree.af8691e7567908592b6a.png",
+    "static/media/halal.png": "/lettucecook/static/media/halal.a623c51219c7961a60ed.png",
+    "static/media/glutenfree.png": "/lettucecook/static/media/glutenfree.b0e20fefb317c0384af3.png",
+    "static/media/vegetarian.png": "/lettucecook/static/media/vegetarian.db0cdd286a1d7b494d6c.png",
+    "index.html": "/lettucecook/index.html",
+    "main.4fb318e1.css.map": "/lettucecook/static/css/main.4fb318e1.css.map",
+    "main.0e7e3c14.js.map": "/lettucecook/static/js/main.0e7e3c14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fb318e1.css",
+    "static/js/main.0e7e3c14.js"
+  ]
+}
