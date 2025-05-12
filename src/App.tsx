@@ -3,7 +3,7 @@
 
 import React, { useState, useRef } from 'react';
 import styled, { createGlobalStyle, ThemeProvider, DefaultTheme, keyframes } from 'styled-components';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import heroPlate from './assets/hero-plate.png';
 import { tags, recipes } from './data/recipes';
 import RecipeDetail from './components/RecipeDetail';
