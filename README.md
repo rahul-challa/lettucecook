@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# LettuceCook 🥗
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, dark-mode-only cookbook and recipe website built with React, TypeScript, and styled-components. LettuceCook features a bold, dramatic design with a warm amber accent, beautiful hero section, tag-based filtering, responsive recipe grid, and a detailed recipe view with export-to-DOCX functionality.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
+- **Modern, bold dark UI** with warm accent and dramatic hero section
+- **Responsive 3-column recipe grid** (desktop) with smooth hover effects
+- **Tag filtering** with glowing, round image buttons (Vegan, Vegetarian, Gluten-Free, Halal, Dairy-Free)
+- **Powerful search bar** (filters by name, description, or tags)
+- **Recipe detail page** with ingredients, instructions, notes, and meta info
+- **Download recipe as DOCX** (works on GitHub Pages/static hosting)
+- **All assets are local** (no external image dependencies)
+- **Beautiful, contrasting footer** with social icons
+- **MIT Licensed**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [styled-components](https://styled-components.com/)
+- [react-router-dom](https://reactrouter.com/)
+- [docx](https://www.npmjs.com/package/docx) & [file-saver](https://www.npmjs.com/package/file-saver) (for DOCX export)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Install dependencies
+```bash
+npm install
+```
 
-### `npm run build`
+### 2. Start the development server
+```bash
+npm start
+```
+Visit [http://localhost:3000](http://localhost:3000)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Build for production
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌐 Deployment
+LettuceCook is fully static and works great on [GitHub Pages](https://pages.github.com/):
+- Build with `npm run build` and deploy the `build/` folder.
+- All DOCX export features work client-side (no backend required).
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Structure
+```
+src/
+  assets/         # Local images for tags, hero, and placeholders
+  components/     # React components (RecipeCard, RecipeDetail, etc.)
+  data/           # Recipe and tag data (edit here to add recipes)
+  types/          # TypeScript interfaces
+  App.tsx         # Main app logic and routing
+  index.tsx       # Entry point
+public/           # Static files (manifest, icons, favicon)
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🥑 Customization
+- **Add recipes:** Edit `src/data/recipes.ts` and follow the `Recipe` interface.
+- **Add tags:** Edit `src/data/recipes.ts` and add to the `tags` array (with a local image in `src/assets`).
+- **Change accent color:** Edit your theme in `App.tsx` or your styled-components theme provider.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📝 License
+MIT License. See [LICENSE](./LICENSE).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🙏 Credits & Notes
+- All images are local and can be replaced in `src/assets/`.
+- Social icons are SVG and styled for visual balance.
+- Inspired by modern recipe and food blog design trends.
+- Accessibility and keyboard navigation are considered throughout.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy cooking! 🍋
