@@ -332,66 +332,27 @@ const Grid = styled.div`
   }
 `;
 
-const Card = styled.div`
-  background: ${({ theme }) => theme.card};
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 0.22s cubic-bezier(0.4,0,0.2,1), background 0.3s, transform 0.18s, border 0.18s;
-  border: 2.5px solid transparent;
-  will-change: transform, box-shadow, border;
-  cursor: pointer;
-  &:hover {
-    box-shadow: 0 12px 48px ${({ theme }) => theme.accent}66, 0 2px 24px #0002;
-    transform: scale(1.035);
-    border: 2.5px solid ${({ theme }) => theme.accent};
-    background: ${({ theme }) => theme.card};
-  }
-`;
-
-const CardImage = styled.img`
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-`;
-
-const CardContent = styled.div`
-  padding: 20px 18px 18px 18px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-`;
-
-const CardTitle = styled.h3`
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: ${({ theme }) => theme.text};
-  margin-bottom: 0.5rem;
-`;
-
-const CardDesc = styled.p`
-  color: ${({ theme }) => theme.subtext};
-  font-size: 1rem;
-  margin-bottom: 1.2rem;
-  flex: 1;
-`;
-
-const CardTags = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-`;
-
-const CardTag = styled.span`
-  background: ${({ theme }) => theme.accent2};
-  color: #fff;
-  font-size: 0.85rem;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-weight: 500;
-`;
+// const Card = styled.div`
+//   ...
+// `;
+// const CardImage = styled.img`
+//   ...
+// `;
+// const CardContent = styled.div`
+//   ...
+// `;
+// const CardTitle = styled.h3`
+//   ...
+// `;
+// const CardDesc = styled.p`
+//   ...
+// `;
+// const CardTags = styled.div`
+//   ...
+// `;
+// const CardTag = styled.span`
+//   ...
+// `;
 
 const TagButton = styled.button<{
   selected: boolean;

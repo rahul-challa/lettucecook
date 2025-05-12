@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Recipe } from '../types/recipe';
 import { recipes } from '../data/recipes';
 import { saveAs } from 'file-saver';
-import { Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell, WidthType } from 'docx';
+import { Document, Packer, Paragraph, /* TextRun, */ HeadingLevel, Table, TableRow, TableCell, WidthType } from 'docx';
 
 const Container = styled.div`
   max-width: 1200px;
